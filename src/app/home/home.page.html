@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content" [fullscreen]="true" style="text-align:center ;">
+  <!-- <img src="assets/download.jpg"> -->
+  <!-- <ion-img style="width: 80%; height: 80%;" src="assets/download.jpg"></ion-img> -->
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" style="text-align: center;">LOGIN</ion-title>
+    </ion-toolbar>
+  </ion-header>
+ 
+  <center>
+    <ion-avatar>
+      <img src="assets\login.jpg" alt="avatar"heigth="300px"width="300px">
+    </ion-avatar>
+    <div style="width: 70%;">
+      <ion-item>
+        <ion-input  name="username" type="text" placeholder="Username" [(ngModel)]="username"></ion-input>
+      </ion-item><br>
+      <ion-item>
+        <ion-input  name="password" type="password" placeholder="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-button type="submit" style="background-color:rgb(15, 221, 15);" size="large"(click)="login()">Submit</ion-button>
+    </div>
+  </center>
+
+  <input type="text" [(ngModel)]="name">
+  <input type="text" [(ngModel)]="roolno">
+  <input type="text" [(ngModel)]="address">
+  <input type="text" [(ngModel)]="standard">
+  <ion-button (click)="saveuserdata(name,roolno,address,standard)">ok</ion-button>
+
+
+</ion-content>
